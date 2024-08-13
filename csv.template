@@ -1,0 +1,2 @@
+active,domain,local_part,name,password,password2,quota,force_pw_update,tls_enforce_in,tls_enforce_out
+1,bar.com,foo,Foo Bar,SuperSecretPassword,SuperSecretPassword,1024,1,0,0
