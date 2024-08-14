@@ -1,0 +1,2 @@
+address,goto,active
+foo@bar.com,bar@foo.com,1
