@@ -5,7 +5,7 @@ ENDPOINT="https://mailcow.server/api/v1/add/alias"
 API_KEY="******-******-******-******-******"
 
 # Read the CSV file line by line and create mailbox users
-while IFS=',' read -r address goto active; do
+while IFS=';' read -r address goto active; do
 
     # Build the API request JSON
         data=$(cat <<EOF

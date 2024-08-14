@@ -5,7 +5,7 @@ ENDPOINT="https://mailcow.server/api/v1/add/mailbox"
 API_KEY="******-******-******-******-******"
  
 # Read the CSV file line by line and create mailbox users
-while IFS=',' read -r active domain local_part name password password2 quota force_pw_update tls_enforce_in tls_enforce_out; do
+while IFS=';' read -r active domain local_part name password password2 quota force_pw_update tls_enforce_in tls_enforce_out; do
  
     # Build the API request JSON
         data=$(cat <<EOF
