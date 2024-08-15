@@ -19,7 +19,7 @@ while IFS=';' read -r active domain local_part name password password2 quota for
         "active": "$active",
         "force_pw_update": "$force_pw_update",
         "tls_enforce_in": "$tls_enforce_in",
-        "tls_enforce_out": "$tls_enforce_out"
+        "tls_enforce_out": $tls_enforce_out
 }
 EOF
 )
