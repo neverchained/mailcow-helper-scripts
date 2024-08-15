@@ -10,16 +10,16 @@ while IFS=';' read -r active domain local_part name password password2 quota for
     # Build the API request JSON
         data=$(cat <<EOF
 {
-        "local_part": $local_part,
-        "domain": $domain,
-        "name": $name,
-        "quota": $quota,
-        "password": $password,
-        "password2": $password2,
-        "active": $active,
-        "force_pw_update": $force_pw_update,
-        "tls_enforce_in": $tls_enforce_in,
-        "tls_enforce_out": $tls_enforce_out
+        "local_part": "$local_part",
+        "domain": "$domain",
+        "name": "$name",
+        "quota": "$quota",
+        "password": "$password",
+        "password2": "$password2",
+        "active": "$active",
+        "force_pw_update": "$force_pw_update",
+        "tls_enforce_in": "$tls_enforce_in",
+        "tls_enforce_out": "$tls_enforce_out"
 }
 EOF
 )
